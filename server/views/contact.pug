@@ -4,7 +4,7 @@ block content
     h1 Contact Page
     p This is the contact page 
     p See some our contact below:
+    - const contact_list = ["251-555-5555", "251-555-1234", "251-555-2468", "251-555-4321"];
     ul.contacts
-        li 251-555-5555
-        li 251-555-1234
-        li 251-555-2468
+        each number in contact_list
+            li= number
